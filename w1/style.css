@@ -1,0 +1,103 @@
+:root {
+  --tail-color: #5188ee;
+  --tail-button-color: #618fd4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--tail-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--tail-button-color);
+}
+
+nav a:hover {
+    background-color: #1e3a6b;
+    box-shadow: 0 4px 8px #00000050;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+}
+
+a {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15%;
+    flex: 1;
+}
+
+hr {
+    margin: 30px 0px;
+}
+
+section h2 {
+    margin-bottom: 40px;
+}
+
+section a {
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: var(--tail-color);
+    text-decoration: none;
+}
+
+section a:hover {
+    background-color: #89adec;
+    box-shadow: 0 4px 8px #00000050;
+}
+
+footer {
+    background-color: var(--tail-color);
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
