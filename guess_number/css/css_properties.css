@@ -1,0 +1,66 @@
+body
+{
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1
+{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 40px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: #1a1a1a;
+    display: inline-block;
+}
+
+#main   
+{
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 50px;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    margin: 10px auto;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: #2a2a2a;
+    max-width: 600px;
+}
+
+#wins
+{
+    color: #00FF7F;
+}
+
+#losses
+{
+    color: #FF4444;
+}
+
+#guesses
+{
+    color: #AAAAAA;
+}
+
+#guessNumber
+{
+    color: #FFA500
+}
+
+#matches
+{
+    color: #333333;
+}
