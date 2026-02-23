@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3: Quiz</title>
+    <link rel="stylesheet" href="style.css">
     <script src="js/script.js" defer>
     </script>
 </head>
 <body>
-    <h1> CSS Quiz </h1>
+    <div class="container">
+        <h1>CSS Quiz</h1>
+        <p class="times">Times taken: <span id="timesTaken">0</span></p>
 
-    <p id="q1"> 1. What car is the fastest? </p>
-    <div id="q1ChoicesDiv"></div>
-    <br>
+        <div class="question">
+            <p id="q1">1. What car is the fastest?</p>
+            <div id="q1ChoicesDiv"></div>
+            <div id="q1Feedback" class="feedback"></div>
+        </div>
 
-    <p id="q2"> 2. Which car is the best? </p>
-    <input type="text" placeholder="Type a car name here" id="q2Choices">
-    <br>
+        <div class="question">
+            <p id="q2">2. Which car is the best? (Look over)</p>
+            <input type="text" placeholder="Type a car name here" id="q2Choices">
+            <div id="q2Feedback" class="feedback"></div>
+        </div>
 
-    <p id="q3"> 3. Which car is the most expensive? </p>
-    <select id="q3Choices">
-        <option value="BMW">BMW</option>
-        <option value="Audi">Audi</option>
-        <option value="Ferrari">Ferrari</option>
-        <option value="Lamborghini">Lamborghini</option>
-    </select>
-    <br>
+        <div class="question">
+            <p id="q3">3. Which car is the most expensive?</p>
+            <select id="q3Choices">
+                <option value="">Select an answer</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Lamborghini">Lamborghini</option>
+            </select>
+            <div id="q3Feedback" class="feedback"></div>
+        </div>
 
-    <p id="q4"> 4. Which car is the slowest? </p>
-    <input type="text" placeholder="Type a number here" id="q4Choices">
-    <br>
+        <div class="question">
+            <p id="q4">4. Which car is the slowest? (1:BMW 2:Audi 3:Ferrari 4:Lamborghini)</p>
+            <input type="text" placeholder="Type a number here" id="q4Choices">
+            <div id="q4Feedback" class="feedback"></div>
+        </div>
 
-    <p id="q5"> 5. Which car is the most popular? </p>
-    <input type="checkbox" id="q5Choice1" value="BMW"> BMW
-    <input type="checkbox" id="q5Choice2" value="Audi"> Audi
-    <input type="checkbox" id="q5Choice3" value="Ferrari"> Ferrari
-    <input type="checkbox" id="q5Choice4" value="Lamborghini"> Lamborghini
-    <br>
+        <div class="question">
+            <p id="q5">5. Select the 2 most popular cars</p>
+            <div id="q5ChoicesDiv"></div>
+            <div id="q5Feedback" class="feedback"></div>
+        </div>
 
-    <button> Submit Quiz </button>
+        <button id="submitBtn">Submit Quiz</button>
 
-    <p id="result"></p>
+        <p id="result"></p>
+        <p id="congrats"></p>
+    </div>
 </body>
 </html>
